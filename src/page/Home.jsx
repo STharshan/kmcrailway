@@ -247,13 +247,13 @@ export default function RagamaTrainSchedule() {
 
   return (
     <div className="min-h-screen bg-black text-black font-sans p-2 sm:p-4 md:p-6 select-none">
-      <div className="max-w-7xl mx-auto border-4 border-[#C0CA33] bg-black shadow-[0_0_25px_rgba(192,202,51,0.35)]">
+      <div className="max-w-7xl mx-auto border-4 border-[#22c722] bg-black shadow-[0_0_25px_rgba(192,202,51,0.35)]">
         
         {/* TOP DIGITAL DISPLAY HEADER */}
-        <header className="bg-black border-b-4 border-[#C0CA33] p-4 sm:p-6 text-[#C0CA33]">
+        <header className="bg-black border-b-4 border-[#22c722] p-4 sm:p-6 text-[#22c722]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
-              <div className="bg-[#C0CA33] text-black p-2 rounded-sm">
+              <div className="bg-[#22c722] text-black p-2 rounded-sm">
                 <Train className="w-8 h-8 sm:w-10 sm:h-10" />
               </div>
               <div>
@@ -267,13 +267,13 @@ export default function RagamaTrainSchedule() {
             </div>
 
             {/* LIVE DIGITAL CLOCK DISPLAY */}
-            <div className="flex items-center gap-3 bg-[#121212] border-2 border-[#C0CA33] px-5 py-2 text-[#C0CA33] font-mono rounded">
-              <Clock className="w-6 h-6 animate-pulse text-[#C0CA33]" />
+            <div className="flex items-center gap-3 bg-[#121212] border-2 border-[#22c722] px-5 py-2 text-[#22c722] font-mono rounded">
+              <Clock className="w-6 h-6 animate-pulse text-[#22c722]" />
               <div className="text-right">
                 <div className="text-2xl sm:text-3xl font-bold tracking-widest leading-none">
                   {currentTime.toLocaleTimeString('en-US', { hour12: false })}
                 </div>
-                <div className="text-[11px] tracking-widest text-amber-200/70 uppercase mt-1">
+                <div className="text-xl tracking-widest text-white uppercase mt-1">
                   {currentTime.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}
                 </div>
               </div>
@@ -285,7 +285,7 @@ export default function RagamaTrainSchedule() {
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse font-mono">
             <thead>
-              <tr className="bg-black text-[#C0CA33] border-b-4 border-[#C0CA33] text-xs sm:text-sm uppercase tracking-wider">
+              <tr className="bg-black text-[#22c722] border-b-4 border-[#22c722] text-xs sm:text-sm uppercase tracking-wider">
                 <th className="py-3 px-4 w-12 text-center">ORDER</th>
                 <th className="py-3 px-4">Train Name / Route</th>
                 <th className="py-3 px-4">Frequency</th>
@@ -294,7 +294,7 @@ export default function RagamaTrainSchedule() {
                 <th className="py-3 px-4 text-center">Live Status</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-black font-bold text-sm sm:text-base">
+            <tbody className="divide-y divide-white font-extrabold text-lg">
               {filteredAndSortedSchedule.length > 0 ? (
                 filteredAndSortedSchedule.map((train, index) => {
                   const depMin = getMinutesFromMidnight(train.departure);
@@ -305,7 +305,7 @@ export default function RagamaTrainSchedule() {
 
                   // High Contrast Row Styling (Image matching Yellow/Black)
                   const isYellowRow = index % 2 === 0;
-                  const rowBg = isYellowRow ? 'bg-[#C0CA33] text-black' : 'bg-black text-[#C0CA33]';
+                  const rowBg = isYellowRow ? 'bg-[#22c722] text-black' : 'bg-black text-[#22c722]';
 
                   return (
                     <tr
@@ -329,7 +329,7 @@ export default function RagamaTrainSchedule() {
                       </td>
 
                       {/* Frequency */}
-                      <td className="py-3 px-4 text-xs sm:text-sm uppercase font-semibold">
+                      <td className="py-3 px-4 text-lg uppercase font-extrabold">
                         {train.frequency}
                       </td>
 
@@ -368,7 +368,7 @@ export default function RagamaTrainSchedule() {
                 })
               ) : (
                 <tr>
-                  <td colSpan="6" className="py-12 text-center text-[#C0CA33] bg-black">
+                  <td colSpan="6" className="py-12 text-center text-[#22c722] bg-black">
                     <div className="flex flex-col items-center justify-center gap-2">
                       <AlertCircle className="w-8 h-8 text-amber-400" />
                       <p className="text-lg font-bold uppercase">No matching trains found</p>
@@ -381,7 +381,7 @@ export default function RagamaTrainSchedule() {
         </div>
 
         {/* FOOTER */}
-        <footer className="bg-black text-[#C0CA33] p-4 border-t-4 border-[#C0CA33] text-center text-xs tracking-wider font-mono">
+        <footer className="bg-black text-[#22c722] p-4 border-t-4 border-[#22c722] text-center text-xs tracking-wider font-mono">
           <p className="uppercase font-bold">
             Sri Lanka Railways • Ragama Station Live Departure System
           </p>
