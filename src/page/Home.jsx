@@ -294,7 +294,7 @@ export default function RagamaTrainSchedule() {
                 <th className="py-3 px-4 text-center">Live Status</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white font-extrabold text-lg">
+            <tbody className="divide-y divide-white font-extrabold">
               {filteredAndSortedSchedule.length > 0 ? (
                 filteredAndSortedSchedule.map((train, index) => {
                   const depMin = getMinutesFromMidnight(train.departure);
