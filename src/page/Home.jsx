@@ -279,47 +279,6 @@ export default function RagamaTrainSchedule() {
               </div>
             </div>
           </div>
-
-          {/* SEARCH & FILTERS BAR */}
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-3">
-            {/* Search Input */}
-            <div className="relative">
-              <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-black" />
-              <input
-                type="text"
-                placeholder="Search Train or Destination..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-9 pr-3 py-2 bg-[#C0CA33] text-black placeholder-black/70 font-bold text-sm focus:outline-none focus:ring-2 focus:ring-white border border-black uppercase"
-              />
-            </div>
-
-            {/* Frequency Select Filter */}
-            <div className="flex items-center bg-[#C0CA33] px-2 border border-black">
-              <Calendar className="w-4 h-4 text-black mr-2" />
-              <select
-                value={filterFrequency}
-                onChange={(e) => setFilterFrequency(e.target.value)}
-                className="w-full bg-[#C0CA33] text-black font-bold text-sm py-2 uppercase focus:outline-none cursor-pointer"
-              >
-                <option value="ALL">All Frequencies</option>
-                <option value="DAILY">Daily Only</option>
-                <option value="WEEKDAYS">Weekdays</option>
-                <option value="WEEKENDS">Weekends</option>
-              </select>
-            </div>
-
-            {/* Clear Filter */}
-            <button
-              onClick={() => {
-                setSearchTerm('');
-                setFilterFrequency('ALL');
-              }}
-              className="px-4 py-2 bg-black text-[#C0CA33] border-2 border-[#C0CA33] font-bold text-sm uppercase hover:bg-[#C0CA33] hover:text-black transition-colors"
-            >
-              Reset Board
-            </button>
-          </div>
         </header>
 
         {/* HIGH-CONTRAST DIGITAL DISPLAY BOARD */}
