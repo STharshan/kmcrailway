@@ -3,16 +3,16 @@ import React, { useEffect, useState } from "react";
 const STAFF_MEMBERS = [
   { id: 1, name: "V.S.Polwattage", role: "Operation Manager", image: "/pol.png" },
   { id: 2, name: "B.A.S.G.D.Balasooriya", role: "Administrator", image: "/kan.png" },
-  { id: 3, name: "W.I.A.S.FERNANDO", role: "HR officer", image: "/sac.png" },
+  { id: 3, name: "W.I.A.S.FERNANDO", role: "HR officer", image: "/ima.png" },
   { id: 4, name: "V.Dilani", role: "Development Officer", image: "/dil.png" },
-  { id: 5, name: "W.R.D.S.Wijesundara", role: "Transport Officer", image: "/thi.png" },
+  { id: 5, name: "W.R.D.S.Wijesundara", role: "Transport Officer", image: "/din.png" },
   { id: 6, name: "S.Thashan", role: "IT Officer", image: "/tha.png" },
-  { id: 7, name: "H.P.T. Hettiarachchi", role: "System Operator", image: "/ima.png" },
-  { id: 8, name: "D.S.R.Jayasinghe", role: "Maintenance Supervisor", image: "/raj.png" },
+  { id: 7, name: "H.P.T. Hettiarachchi", role: "System Operator", image: "/piu.png" },
+  { id: 8, name: "D.S.R.Jayasinghe", role: "Maintenance Supervisor", image: "/sac.png" },
   { id: 9, name: "D.M.A.Ahamad", role: "Information Officer", image: "/aha.png" },
   { id: 10, name: "H.N. Pathirana", role: "Security Manager", image: "/path.png" },
-  { id: 11, name: "H.N. Pathirana", role: "Security Manager", image: "/piu.png" },
-  { id: 12, name: "H.N. Pathirana", role: "Security Manager", image: "/din.png" },
+  { id: 11, name: "H.N. Pathirana", role: "Security Manager", image: "/thi.png" },
+  { id: 12, name: "H.N. Pathirana", role: "Security Manager", image: "/raj.png" },
 ];
 
 // Three role tiers, each carrying one accent — keeps the board legible
