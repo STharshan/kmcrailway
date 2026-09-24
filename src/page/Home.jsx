@@ -10,9 +10,9 @@ const STAFF_MEMBERS = [
   { id: 7, name: "H.P.T. Hettiarachchi", role: "System Operator", image: "/piu.png" },
   { id: 8, name: "D.S.R.Jayasinghe", role: "Maintenance Supervisor", image: "/sac.png" },
   { id: 9, name: "D.M.A.Ahamad", role: "Information Officer", image: "/aha.png" },
-  { id: 10, name: "H.N. Pathirana", role: "Security Manager", image: "/path.png" },
-  { id: 11, name: "H.N. Pathirana", role: "Security Manager", image: "/thi.png" },
-  { id: 12, name: "H.N. Pathirana", role: "Security Manager", image: "/raj.png" },
+  { id: 10, name: "H.N.Pathirana", role: "Security Manager", image: "/path.png" },
+  { id: 11, name: "H.M.D.K.Thilakaratne", role: "Security Manager", image: "/thi.png" },
+  { id: 12, name: "R.N.Rajapaksha", role: "Security Manager", image: "/raj.png" },
 ];
 
 // Three role tiers, each carrying one accent — keeps the board legible
